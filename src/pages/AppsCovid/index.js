@@ -6,8 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import MobileStoreButton from 'react-mobile-store-button';
-
+import {AiFillExclamationCircle} from 'react-icons/ai'
 
 // import Card from scomponents/Card'
 import appleButton from '../../assets/aple-button.png'
@@ -19,15 +18,21 @@ export default function AppsCovid() {
     <div class = "container">
         <div class = "header">
           <div class = 'header-item-1' >
-                <div>
-                  <div>
-                    Aplicativo para corona virus
-                  </div>
-                  <button class= "button">
-                    Voltar
-                  </button>
-              </div>
-
+            <div class = 'header-item-2' >
+              <div>
+                    <div class = "title-icon">
+                      <p>
+                      Aplicativo para corona virus
+                      </p>
+                      <button class = "button-icon">
+                        <AiFillExclamationCircle size ='2em' color='green'/>
+                      </button>
+                    </div>
+                    <button class= "button">
+                      Voltar
+                    </button>
+                </div>
+            </div>
           </div>
       </div>
 
@@ -46,7 +51,7 @@ export default function AppsCovid() {
               <Typography gutterBottom variant="h5" component="h2">
                 Lizard
               </Typography>
-              <p> @instagram </p>
+              <p class= "subtitle" > @instagram </p>
               <Typography variant="body2" color="textSecondary" component="p">
                 Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
                 across all continents except Antarctica
@@ -54,9 +59,11 @@ export default function AppsCovid() {
             </CardContent>
           </CardActionArea>
           <CardActions >
+            <a>
             <Button size='small'>
               <img src = {appleButton} alt = '' class = 'img-button'/>
             </Button>
+            </a>
             <Button size='small'>
               <img src = {googleButton} alt = '' class = 'img-button'/>
             </Button>
@@ -65,7 +72,6 @@ export default function AppsCovid() {
           </Button>
           </CardActions>
         </Card>
-
 
 
         <Card className = "card">
@@ -81,7 +87,7 @@ export default function AppsCovid() {
               <Typography gutterBottom variant="h5" component="h2">
                 Lizard
               </Typography>
-              <p> @instagram </p>
+              <p class= "subtitle" > @instagram </p>
               <Typography variant="body2" color="textSecondary" component="p">
                 Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
                 across all continents except Antarctica
@@ -89,14 +95,16 @@ export default function AppsCovid() {
             </CardContent>
           </CardActionArea>
           <CardActions >
+            <a>
             <Button size='small'>
               <img src = {appleButton} alt = '' class = 'img-button'/>
             </Button>
+            </a>
             <Button size='small'>
               <img src = {googleButton} alt = '' class = 'img-button'/>
             </Button>
-            <Button size='small' className = 'button-web'>
-            web
+            <Button size='small' color="primary">
+            <div class = "button-web" ><div>WEBSite</div></div>
           </Button>
           </CardActions>
         </Card><Card className = "card">
@@ -112,7 +120,7 @@ export default function AppsCovid() {
               <Typography gutterBottom variant="h5" component="h2">
                 Lizard
               </Typography>
-              <p> @instagram </p>
+              <p class= "subtitle" > @instagram </p>
               <Typography variant="body2" color="textSecondary" component="p">
                 Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
                 across all continents except Antarctica
@@ -120,48 +128,16 @@ export default function AppsCovid() {
             </CardContent>
           </CardActionArea>
           <CardActions >
+            <a>
             <Button size='small'>
               <img src = {appleButton} alt = '' class = 'img-button'/>
             </Button>
+            </a>
             <Button size='small'>
               <img src = {googleButton} alt = '' class = 'img-button'/>
             </Button>
-            <Button size='small'>
-          <div class = 'img-button'>
-
-          </div>
-          </Button>
-          </CardActions>
-          
-        </Card><Card className = "card">
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              alt="Contemplative Reptile"
-              height="140"
-              image="../../assets/apple-logo.png"
-              title="Contemplative Reptile"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                Lizard
-              </Typography>
-              <p> @instagram </p>
-              <Typography variant="body2" color="textSecondary" component="p">
-                Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                across all continents except Antarctica
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-          <CardActions >
-            <Button size='small'>
-              <img src = {appleButton} alt = '' class = 'img-button'/>
-            </Button>
-            <Button size='small'>
-              <img src = {googleButton} alt = '' class = 'img-button'/>
-            </Button>
-            <Button size='small'>
-            web
+            <Button size='small' color="primary">
+            <div class = "button-web" ><div>WEBSite</div></div>
           </Button>
           </CardActions>
         </Card><Card className = "card">
@@ -177,7 +153,7 @@ export default function AppsCovid() {
               <Typography gutterBottom variant="h5" component="h2">
                 Lizard
               </Typography>
-              <p> @instagram </p>
+              <p class= "subtitle" > @instagram </p>
               <Typography variant="body2" color="textSecondary" component="p">
                 Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
                 across all continents except Antarctica
@@ -185,14 +161,16 @@ export default function AppsCovid() {
             </CardContent>
           </CardActionArea>
           <CardActions >
+            <a>
             <Button size='small'>
               <img src = {appleButton} alt = '' class = 'img-button'/>
             </Button>
+            </a>
             <Button size='small'>
               <img src = {googleButton} alt = '' class = 'img-button'/>
             </Button>
-            <Button size='small'>
-            web
+            <Button size='small' color="primary">
+            <div class = "button-web" ><div>WEBSite</div></div>
           </Button>
           </CardActions>
         </Card><Card className = "card">
@@ -208,7 +186,7 @@ export default function AppsCovid() {
               <Typography gutterBottom variant="h5" component="h2">
                 Lizard
               </Typography>
-              <p> @instagram </p>
+              <p class= "subtitle" > @instagram </p>
               <Typography variant="body2" color="textSecondary" component="p">
                 Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
                 across all continents except Antarctica
@@ -216,17 +194,18 @@ export default function AppsCovid() {
             </CardContent>
           </CardActionArea>
           <CardActions >
+            <a>
             <Button size='small'>
               <img src = {appleButton} alt = '' class = 'img-button'/>
             </Button>
+            </a>
             <Button size='small'>
               <img src = {googleButton} alt = '' class = 'img-button'/>
             </Button>
-            <Button size='small'>
-            web
+            <Button size='small' color="primary">
+            <div class = "button-web" ><div>WEBSite</div></div>
           </Button>
           </CardActions>
-          
         </Card><Card className = "card">
           <CardActionArea>
             <CardMedia
@@ -240,7 +219,7 @@ export default function AppsCovid() {
               <Typography gutterBottom variant="h5" component="h2">
                 Lizard
               </Typography>
-              <p> @instagram </p>
+              <p class= "subtitle" > @instagram </p>
               <Typography variant="body2" color="textSecondary" component="p">
                 Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
                 across all continents except Antarctica
@@ -248,49 +227,18 @@ export default function AppsCovid() {
             </CardContent>
           </CardActionArea>
           <CardActions >
+            <a>
             <Button size='small'>
               <img src = {appleButton} alt = '' class = 'img-button'/>
             </Button>
+            </a>
             <Button size='small'>
               <img src = {googleButton} alt = '' class = 'img-button'/>
             </Button>
-            <Button size='small'>
-            web
+            <Button size='small' color="primary">
+            <div class = "button-web" ><div>WEBSite</div></div>
           </Button>
           </CardActions>
-         
-        </Card><Card className = "card">
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              alt="Contemplative Reptile"
-              height="140"
-              image="../../assets/apple-logo.png"
-              title="Contemplative Reptile"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                Lizard
-              </Typography>
-              <p> @instagram </p>
-              <Typography variant="body2" color="textSecondary" component="p">
-                Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                across all continents except Antarctica
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-          <CardActions >
-            <Button size='small'>
-              <img src = {appleButton} alt = '' class = 'img-button'/>
-            </Button>
-            <Button size='small'>
-              <img src = {googleButton} alt = '' class = 'img-button'/>
-            </Button>
-            <Button size='small'>
-            web
-          </Button>
-          </CardActions>
-          
         </Card>
 
         </div>
