@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
@@ -6,241 +7,254 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import {AiFillExclamationCircle} from 'react-icons/ai'
 
-// import Card from scomponents/Card'
+import Header from '../../components/Header';
+import Popup from '../../components/Popup';
+
 import appleButton from '../../assets/aple-button.png'
 import googleButton from '../../assets/google-button.png'
+import dog from '../../assets/dogs.jpg'
 import './styles.css';
 
 export default function AppsCovid() {
+  const [showPopup, setShowPopup] = useState(false);
+    const togglePopup = () => {
+        setShowPopup(!showPopup);
+    }
+    const cards = [
+      {
+        id: Math.random(),
+        img: dog,
+        title: 'Covidx',
+        instagram: '@covidx',
+        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+        appleStore: '/',
+        googleSore: '/',
+        website: '/'
+      },
+      {
+        id: Math.random(),
+        img: dog,
+        title: 'Covidx',
+        instagram: '@covidx',
+        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+        appleStore: '/',
+        googleSore: '/',
+        website: '/'
+      },
+      {
+        id: Math.random(),
+        img: dog,
+        title: 'Covidx',
+        instagram: '@covidx',
+        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+        appleStore: '/',
+        googleSore: '/',
+        website: '/'
+      },
+      {
+        id: Math.random(),
+        img: dog,
+        title: 'Covidx',
+        instagram: '@covidx',
+        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+        appleStore: '/',
+        googleSore: '/',
+        website: '/'
+      },
+      {
+        id: Math.random(),
+        img: dog,
+        title: 'Covidx',
+        instagram: '@covidx',
+        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+        appleStore: '/',
+        googleSore: '/',
+        website: '/'
+      },
+      {
+        id: Math.random(),
+        img: dog,
+        title: 'Covidx',
+        instagram: '@covidx',
+        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+        appleStore: '/',
+        googleSore: '/',
+        website: '/'
+      },
+      {
+        id: Math.random(),
+        img: dog,
+        title: 'Covidx',
+        instagram: '@covidx',
+        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+        appleStore: '/',
+        googleSore: '/',
+        website: '/'
+      },
+      {
+        id: Math.random(),
+        img: dog,
+        title: 'Covidx',
+        instagram: '@covidx',
+        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+        appleStore: '/',
+        googleSore: '/',
+        website: '/'
+      },
+      {
+        id: Math.random(),
+        img: dog,
+        title: 'Covidx',
+        instagram: '@covidx',
+        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+        appleStore: '/',
+        googleSore: '/',
+        website: '/'
+      },
+      {
+        id: Math.random(),
+        img: dog,
+        title: 'Covidx',
+        instagram: '@covidx',
+        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+        appleStore: '/',
+        googleSore: '/',
+        website: '/'
+      },
+      {
+        id: Math.random(),
+        img: dog,
+        title: 'Covidx',
+        instagram: '@covidx',
+        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+        appleStore: '/',
+        googleSore: '/',
+        website: '/'
+      },
+      {
+        id: Math.random(),
+        img: dog,
+        title: 'Covidx',
+        instagram: '@covidx',
+        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+        appleStore: '/',
+        googleSore: '/',
+        website: '/'
+      },
+      {
+        id: Math.random(),
+        img: dog,
+        title: 'Covidx',
+        instagram: '@covidx',
+        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+        appleStore: '/',
+        googleSore: '/',
+        website: '/'
+      },
+      {
+        id: Math.random(),
+        img: dog,
+        title: 'Covidx',
+        instagram: '@covidx',
+        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+        appleStore: '/',
+        googleSore: '/',
+        website: '/'
+      },
+      {
+        id: Math.random(),
+        img: dog,
+        title: 'Covidx',
+        instagram: '@covidx',
+        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+        appleStore: '/',
+        googleSore: '/',
+        website: '/'
+      },
+      {
+        id: Math.random(),
+        img: dog,
+        title: 'Covidx',
+        instagram: '@covidx',
+        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+        appleStore: '/',
+        googleSore: '/',
+        website: '/'
+      },
+      {
+        id: Math.random(),
+        img: dog,
+        title: 'Covidx',
+        instagram: '@covidx',
+        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+        appleStore: '/',
+        googleSore: '/',
+        website: '/'
+      },
+      {
+        id: Math.random(),
+        img: dog,
+        title: 'Covidx',
+        instagram: '@covidx',
+        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+        appleStore: '/',
+        googleSore: '/',
+        website: '/'
+      },
+
+    ]
   return (
-    <div class = "container">
-        <div class = "header">
-          <div class = 'header-item-1' >
-            <div class = 'header-item-2' >
-              <div>
-                    <div class = "title-icon">
-                      <p>
-                      Aplicativo para corona virus
-                      </p>
-                      <button class = "button-icon">
-                        <AiFillExclamationCircle size ='2em' color='green'/>
-                      </button>
-                    </div>
-                    <button class= "button">
-                      Voltar
-                    </button>
-                </div>
-            </div>
-          </div>
-      </div>
+    <div className = "container">
+      <Header togglePopup={togglePopup}/>
+      <div className = "body">
+        <div className = "body-container">
 
-      <div class = "body">
-        <div class = "body-container">
-         <Card className = "card">
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              alt="Contemplative Reptile"
-              height="140"
-              image="../../assets/apple-logo.png"
-              title="Contemplative Reptile"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                Lizard
-              </Typography>
-              <p class= "subtitle" > @instagram </p>
-              <Typography variant="body2" color="textSecondary" component="p">
-                Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                across all continents except Antarctica
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-          <CardActions >
-            <a>
-            <Button size='small'>
-              <img src = {appleButton} alt = '' class = 'img-button'/>
-            </Button>
-            </a>
-            <Button size='small'>
-              <img src = {googleButton} alt = '' class = 'img-button'/>
-            </Button>
-            <Button size='small' color="primary">
-            <div class = "button-web" ><div>WEBSite</div></div>
-          </Button>
-          </CardActions>
-        </Card>
+          {
+            cards.map(card => (
+              <Card className = "card" key = {card.id}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  height="140"
+                  image= {card.img}
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    {card.title}
+                  </Typography>
+                  <p className= "subtitle" > {card.instagram} </p>
+                  <Typography variant="body2" color="textSecondary" component="p">
+                    {card.description}
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions >
+                <a href={card.appleStore}>
+                <Button size='small'>
+                  <img src = {appleButton} alt = '' className = 'img-button'/>
+                </Button>
+                </a>
+                <a href={card.googleSore}>
+                <Button size='small'>
+                  <img src = {googleButton} alt = '' className = 'img-button'/>
+                </Button>
+                </a>
+                <a href={card.website}>
+                <Button size='small' color="primary">
+                <div className = "button-web" ><div>WEBSite</div></div>
+                </Button>
+                </a>
+              </CardActions>
+            </Card>
+            ))
+          }
 
-
-        <Card className = "card">
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              alt="Contemplative Reptile"
-              height="140"
-              image="../../assets/apple-logo.png"
-              title="Contemplative Reptile"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                Lizard
-              </Typography>
-              <p class= "subtitle" > @instagram </p>
-              <Typography variant="body2" color="textSecondary" component="p">
-                Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                across all continents except Antarctica
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-          <CardActions >
-            <a>
-            <Button size='small'>
-              <img src = {appleButton} alt = '' class = 'img-button'/>
-            </Button>
-            </a>
-            <Button size='small'>
-              <img src = {googleButton} alt = '' class = 'img-button'/>
-            </Button>
-            <Button size='small' color="primary">
-            <div class = "button-web" ><div>WEBSite</div></div>
-          </Button>
-          </CardActions>
-        </Card><Card className = "card">
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              alt="Contemplative Reptile"
-              height="140"
-              image="../../assets/apple-logo.png"
-              title="Contemplative Reptile"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                Lizard
-              </Typography>
-              <p class= "subtitle" > @instagram </p>
-              <Typography variant="body2" color="textSecondary" component="p">
-                Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                across all continents except Antarctica
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-          <CardActions >
-            <a>
-            <Button size='small'>
-              <img src = {appleButton} alt = '' class = 'img-button'/>
-            </Button>
-            </a>
-            <Button size='small'>
-              <img src = {googleButton} alt = '' class = 'img-button'/>
-            </Button>
-            <Button size='small' color="primary">
-            <div class = "button-web" ><div>WEBSite</div></div>
-          </Button>
-          </CardActions>
-        </Card><Card className = "card">
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              alt="Contemplative Reptile"
-              height="140"
-              image="../../assets/apple-logo.png"
-              title="Contemplative Reptile"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                Lizard
-              </Typography>
-              <p class= "subtitle" > @instagram </p>
-              <Typography variant="body2" color="textSecondary" component="p">
-                Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                across all continents except Antarctica
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-          <CardActions >
-            <a>
-            <Button size='small'>
-              <img src = {appleButton} alt = '' class = 'img-button'/>
-            </Button>
-            </a>
-            <Button size='small'>
-              <img src = {googleButton} alt = '' class = 'img-button'/>
-            </Button>
-            <Button size='small' color="primary">
-            <div class = "button-web" ><div>WEBSite</div></div>
-          </Button>
-          </CardActions>
-        </Card><Card className = "card">
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              alt="Contemplative Reptile"
-              height="140"
-              image="../../assets/apple-logo.png"
-              title="Contemplative Reptile"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                Lizard
-              </Typography>
-              <p class= "subtitle" > @instagram </p>
-              <Typography variant="body2" color="textSecondary" component="p">
-                Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                across all continents except Antarctica
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-          <CardActions >
-            <a>
-            <Button size='small'>
-              <img src = {appleButton} alt = '' class = 'img-button'/>
-            </Button>
-            </a>
-            <Button size='small'>
-              <img src = {googleButton} alt = '' class = 'img-button'/>
-            </Button>
-            <Button size='small' color="primary">
-            <div class = "button-web" ><div>WEBSite</div></div>
-          </Button>
-          </CardActions>
-        </Card><Card className = "card">
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              alt="Contemplative Reptile"
-              height="140"
-              image="../../assets/apple-logo.png"
-              title="Contemplative Reptile"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                Lizard
-              </Typography>
-              <p class= "subtitle" > @instagram </p>
-              <Typography variant="body2" color="textSecondary" component="p">
-                Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                across all continents except Antarctica
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-          <CardActions >
-            <a>
-            <Button size='small'>
-              <img src = {appleButton} alt = '' class = 'img-button'/>
-            </Button>
-            </a>
-            <Button size='small'>
-              <img src = {googleButton} alt = '' class = 'img-button'/>
-            </Button>
-            <Button size='small' color="primary">
-            <div class = "button-web" ><div>WEBSite</div></div>
-          </Button>
-          </CardActions>
-        </Card>
-
+        {showPopup ?  
+            <Popup  
+                    text='Aplicativos para o Covid-19'  
+                    closePopup={togglePopup}  
+                /> : null  }  
         </div>
       </div>
     </div>

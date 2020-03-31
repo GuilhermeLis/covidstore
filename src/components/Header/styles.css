@@ -1,0 +1,40 @@
+.header{
+    padding: 30px 0px 20px 0px;
+    
+}
+.header >.header-item-1{
+    /* margin: auto 0px 20px 0px;  */
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+}
+.header >.header-item-1 >.header-item-2{
+    margin: auto 20px auto 20px
+}
+.header >.header-item-1 >.header-item-2 >div{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.title-icon{
+    display: flex;
+    flex-direction: row;
+}
+
+.title-icon >p{
+    margin-right: 6px;
+}
+
+.button-icon {
+    border: 0;
+    border-radius: 8px;
+    background-color: #f0f0f5;
+    text-align: center;
+    text-decoration: none;
+    transition: filter 0.2s;
+}
+
+.button-icon:hover {
+    filter: brightness(90%);
+}
