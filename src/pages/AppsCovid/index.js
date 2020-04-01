@@ -81,6 +81,12 @@ export default function AppsCovid() {
                 </Button>
                 </a>
               </CardActions>
+              {
+                showDiv ? 
+                <div class="mask" >
+                  testando masd
+                </div> : null
+              }
             </Card>
             ))
           }
