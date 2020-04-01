@@ -33,18 +33,8 @@ export default function Card(props) {
                         {props.description}
                     </p>
                 </div>
-                <div className='card-button'>
-                    <a href={props.appleLink}>
-                        <img src = {appleButton} alt = '' className = 'img-button'/>
-                    </a>
-                    <a href={props.googleLink}>
-                        <img src = {googleButton} alt = '' className = 'img-button'/>
-                    </a>
-                    <a href={props.webLink}>
-                        <div className = "button-web" ><div>WEBSite</div></div>
-                    </a>
-                </div>
-            </div> : 
+            </div>
+                : 
                 <div className='mask'>
                     <h2 className='mask-title'>
                         {props.title}
@@ -64,6 +54,20 @@ export default function Card(props) {
                     </div>
 
                 </div>}
+
+
+                
+                <div className='card-button'>
+                    <a href={props.appleLink}>
+                        <img src = {appleButton} alt = '' className = 'img-button'/>
+                    </a>
+                    <a href={props.googleLink}>
+                        <img src = {googleButton} alt = '' className = 'img-button'/>
+                    </a>
+                    <a href={props.webLink}>
+                        <div className = "button-web" ><div>WEBSite</div></div>
+                    </a>
+                </div> 
       </div>
   );
 }
