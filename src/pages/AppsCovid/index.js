@@ -1,19 +1,9 @@
 import React, { useState, useEffect} from 'react';
 
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-
-
 import Header from '../../components/Header';
 import Popup from '../../components/Popup';
+import Card from '../../components/Card';
 
-import appleButton from '../../assets/aple-button.png'
-import googleButton from '../../assets/google-button.png'
 import * as dados from '../../services/card'
 import './styles.css';
 
@@ -41,6 +31,21 @@ export default function AppsCovid() {
         <div className = "body-container">
 
           {
+            cards.map(card=>(
+              <Card
+                key={card.id} 
+                img={card.img}
+                title={card.title}
+                instagram={card.instagram}
+                description={card.description}
+                appleLink={card.appleStore}
+                googleLink={card.googleStore}
+                webLink={card.website}
+              />
+            ))
+          }
+
+          {/* {
             cards.map(card => (
               <Card 
               className = "card" 
@@ -89,7 +94,7 @@ export default function AppsCovid() {
               }
             </Card>
             ))
-          }
+          } */}
         {showPopup ?  
             <Popup  
                     text='Aplicativos para o Covid-19'  
