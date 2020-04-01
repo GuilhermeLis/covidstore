@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useCallback } from 'react';
+import { Select } from 'react-functional-select';
 import { AiFillExclamationCircle } from 'react-icons/ai';
 
 import './styles.css';
 
 export default function Header(props) {
-
+    const getOptionValue = useCallback((option) => option.id, []);
+    const onOptionChange = useCallback((option) => [], []);
+    const getOptionLabel = useCallback((option) => `${option.title}`, []);
   return (
     <div className = "header">
         <div className = 'header-item-1' >
@@ -26,6 +29,14 @@ export default function Header(props) {
                     </button>
                 </div>
             </div>
+        </div>
+        <div className = 'search'>
+            <Select 
+                options={props.dados}
+                onOptionChange={onOptionChange}
+                getOptionLabel={getOptionLabel}
+                getOptionValue={getOptionValue}
+            />
         </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -8,211 +8,46 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
+
 import Header from '../../components/Header';
 import Popup from '../../components/Popup';
 
 import appleButton from '../../assets/aple-button.png'
 import googleButton from '../../assets/google-button.png'
-import dog from '../../assets/dogs.jpg'
+import * as dados from '../../services/card'
 import './styles.css';
 
 export default function AppsCovid() {
   const [showPopup, setShowPopup] = useState(false);
+  const [showDiv, setShowDiv] = useState(false);
+  const [cards, setCards] = useState([])
+
+  useEffect(()=>{
+    setCards(dados.cards)
+  },[])
+
     const togglePopup = () => {
         setShowPopup(!showPopup);
     }
-    const cards = [
-      {
-        id: Math.random(),
-        img: dog,
-        title: 'Covidx',
-        instagram: '@covidx',
-        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
-        appleStore: '/',
-        googleSore: '/',
-        website: '/'
-      },
-      {
-        id: Math.random(),
-        img: dog,
-        title: 'Covidx',
-        instagram: '@covidx',
-        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
-        appleStore: '/',
-        googleSore: '/',
-        website: '/'
-      },
-      {
-        id: Math.random(),
-        img: dog,
-        title: 'Covidx',
-        instagram: '@covidx',
-        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
-        appleStore: '/',
-        googleSore: '/',
-        website: '/'
-      },
-      {
-        id: Math.random(),
-        img: dog,
-        title: 'Covidx',
-        instagram: '@covidx',
-        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
-        appleStore: '/',
-        googleSore: '/',
-        website: '/'
-      },
-      {
-        id: Math.random(),
-        img: dog,
-        title: 'Covidx',
-        instagram: '@covidx',
-        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
-        appleStore: '/',
-        googleSore: '/',
-        website: '/'
-      },
-      {
-        id: Math.random(),
-        img: dog,
-        title: 'Covidx',
-        instagram: '@covidx',
-        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
-        appleStore: '/',
-        googleSore: '/',
-        website: '/'
-      },
-      {
-        id: Math.random(),
-        img: dog,
-        title: 'Covidx',
-        instagram: '@covidx',
-        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
-        appleStore: '/',
-        googleSore: '/',
-        website: '/'
-      },
-      {
-        id: Math.random(),
-        img: dog,
-        title: 'Covidx',
-        instagram: '@covidx',
-        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
-        appleStore: '/',
-        googleSore: '/',
-        website: '/'
-      },
-      {
-        id: Math.random(),
-        img: dog,
-        title: 'Covidx',
-        instagram: '@covidx',
-        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
-        appleStore: '/',
-        googleSore: '/',
-        website: '/'
-      },
-      {
-        id: Math.random(),
-        img: dog,
-        title: 'Covidx',
-        instagram: '@covidx',
-        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
-        appleStore: '/',
-        googleSore: '/',
-        website: '/'
-      },
-      {
-        id: Math.random(),
-        img: dog,
-        title: 'Covidx',
-        instagram: '@covidx',
-        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
-        appleStore: '/',
-        googleSore: '/',
-        website: '/'
-      },
-      {
-        id: Math.random(),
-        img: dog,
-        title: 'Covidx',
-        instagram: '@covidx',
-        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
-        appleStore: '/',
-        googleSore: '/',
-        website: '/'
-      },
-      {
-        id: Math.random(),
-        img: dog,
-        title: 'Covidx',
-        instagram: '@covidx',
-        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
-        appleStore: '/',
-        googleSore: '/',
-        website: '/'
-      },
-      {
-        id: Math.random(),
-        img: dog,
-        title: 'Covidx',
-        instagram: '@covidx',
-        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
-        appleStore: '/',
-        googleSore: '/',
-        website: '/'
-      },
-      {
-        id: Math.random(),
-        img: dog,
-        title: 'Covidx',
-        instagram: '@covidx',
-        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
-        appleStore: '/',
-        googleSore: '/',
-        website: '/'
-      },
-      {
-        id: Math.random(),
-        img: dog,
-        title: 'Covidx',
-        instagram: '@covidx',
-        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
-        appleStore: '/',
-        googleSore: '/',
-        website: '/'
-      },
-      {
-        id: Math.random(),
-        img: dog,
-        title: 'Covidx',
-        instagram: '@covidx',
-        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
-        appleStore: '/',
-        googleSore: '/',
-        website: '/'
-      },
-      {
-        id: Math.random(),
-        img: dog,
-        title: 'Covidx',
-        instagram: '@covidx',
-        description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
-        appleStore: '/',
-        googleSore: '/',
-        website: '/'
-      },
 
-    ]
+    const handleOver = () => {
+      setShowDiv(!showDiv)
+    }
+    
   return (
     <div className = "container">
-      <Header togglePopup={togglePopup}/>
+      <Header togglePopup={togglePopup} dados = {cards}/>
       <div className = "body">
         <div className = "body-container">
 
           {
             cards.map(card => (
-              <Card className = "card" key = {card.id}>
+              <Card 
+              className = "card" 
+              key = {card.id}
+              onMouseOver={handleOver}
+              onMouseOut={handleOver}
+              >
               <CardActionArea>
                 <CardMedia
                   component="img"
@@ -230,17 +65,17 @@ export default function AppsCovid() {
                 </CardContent>
               </CardActionArea>
               <CardActions >
-                <a href={card.appleStore}>
+                <a href={card.appleStore} className = 'linkButton'>
                 <Button size='small'>
                   <img src = {appleButton} alt = '' className = 'img-button'/>
                 </Button>
                 </a>
-                <a href={card.googleSore}>
+                <a href={card.googleSore} className = 'linkButton'>
                 <Button size='small'>
                   <img src = {googleButton} alt = '' className = 'img-button'/>
                 </Button>
                 </a>
-                <a href={card.website}>
+                <a href={card.website} className = 'linkButton'>
                 <Button size='small' color="primary">
                 <div className = "button-web" ><div>WEBSite</div></div>
                 </Button>
@@ -249,7 +84,6 @@ export default function AppsCovid() {
             </Card>
             ))
           }
-
         {showPopup ?  
             <Popup  
                     text='Aplicativos para o Covid-19'  

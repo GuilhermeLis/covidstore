@@ -11,13 +11,31 @@
 }  
 .popup-inner {  
   position: absolute;  
-  left: 25%;  
-  right: 25%;  
-  top: 25%;  
-  bottom: 25%;  
+  left: 15%;  
+  right: 15%;  
+  top: 15%;  
+  bottom: 15%;  
   margin: auto;  
   background:rgba(114,238,144,0.5);  
   border: 5px solid green;
+}
+
+@media only screen and (max-width: 375px){
+  .popup-inner {
+    left: 5%;  
+    right: 5%;  
+    top: 5%;  
+    bottom: 5%;
+  }
+}
+
+@media only screen and (max-width: 320px){
+  .popup-inner {
+    left: 0%;  
+    right: 0%;  
+    top: 0%;  
+    bottom: 0%;
+  }
 }
 .popup-inner .popup-header{
   background-color: white;
@@ -39,6 +57,9 @@
   box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.2);
   text-align: center;
   transition: filter 0.2s;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 .popup-button:hover {
   filter: brightness(90%);

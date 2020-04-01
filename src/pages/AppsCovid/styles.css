@@ -57,4 +57,19 @@
 
 .subtitle{
     color: gray;
+    margin-bottom: 10px;
+}
+
+.linkButton{
+    transition: filter 0.2s;
+}
+
+.linkButton:hover{
+    filter: brightness(80%);
+}
+
+.mask{
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.2);
 }
