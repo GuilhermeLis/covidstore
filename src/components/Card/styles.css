@@ -1,5 +1,9 @@
-.card-container{
+.container{
+    
+}
+.card-container {
     max-width: 280px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     background-color: seashell;
@@ -7,7 +11,6 @@
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
     justify-content: space-between;
 }
-
 .card-container >img {
     height: 140px;
     border-radius: 5px 5px 0px 0px;
@@ -57,4 +60,28 @@
 .button-web{
     /* border: 1px solid #dcdce6; */
     border-radius: 2px;
+}
+
+.mask{
+    display: flex;
+    max-width: 280px;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.mask .mask-title{
+    margin: 10px auto 10px auto;
+}
+
+.mask .mask-info{
+    margin: 10px auto 10px 10px;
+}
+
+.mask .mask-description {
+    margin: 10px;
+    text-align: justify;
 }

@@ -9,7 +9,6 @@ import './styles.css';
 
 export default function AppsCovid() {
   const [showPopup, setShowPopup] = useState(false);
-  const [showDiv, setShowDiv] = useState(false);
   const [cards, setCards] = useState([])
 
   useEffect(()=>{
@@ -20,9 +19,7 @@ export default function AppsCovid() {
         setShowPopup(!showPopup);
     }
 
-    const handleOver = () => {
-      setShowDiv(!showDiv)
-    }
+
     
   return (
     <div className = "container">
@@ -41,60 +38,10 @@ export default function AppsCovid() {
                 appleLink={card.appleStore}
                 googleLink={card.googleStore}
                 webLink={card.website}
+                dataRelease={card.dataRelease}
               />
             ))
           }
-
-          {/* {
-            cards.map(card => (
-              <Card 
-              className = "card" 
-              key = {card.id}
-              onMouseOver={handleOver}
-              onMouseOut={handleOver}
-              >
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image= {card.img}
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    {card.title}
-                  </Typography>
-                  <p className= "subtitle" > {card.instagram} </p>
-                  <Typography variant="body2" color="textSecondary" component="p">
-                    {card.description}
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-              <CardActions >
-                <a href={card.appleStore} className = 'linkButton'>
-                <Button size='small'>
-                  <img src = {appleButton} alt = '' className = 'img-button'/>
-                </Button>
-                </a>
-                <a href={card.googleSore} className = 'linkButton'>
-                <Button size='small'>
-                  <img src = {googleButton} alt = '' className = 'img-button'/>
-                </Button>
-                </a>
-                <a href={card.website} className = 'linkButton'>
-                <Button size='small' color="primary">
-                <div className = "button-web" ><div>WEBSite</div></div>
-                </Button>
-                </a>
-              </CardActions>
-              {
-                showDiv ? 
-                <div class="mask" >
-                  testando masd
-                </div> : null
-              }
-            </Card>
-            ))
-          } */}
         {showPopup ?  
             <Popup  
                     text='Aplicativos para o Covid-19'  

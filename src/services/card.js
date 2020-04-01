@@ -9,177 +9,261 @@ export const cards = [
       description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível',
       appleStore: '/',
       googleSore: '/',
-      website: '/'
+      website: '/',
+      dataRelease: '30/1/2013'
     },
     {
       id: Math.random(),
       img: dog,
       title: 'Covidx',
       instagram: '@covidx',
-      description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+      description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível',
       appleStore: '/',
       googleSore: '/',
-      website: '/'
+      website: '/',
+      dataRelease: '30/1/2013'
     },
     {
       id: Math.random(),
       img: dog,
       title: 'Covidx',
       instagram: '@covidx',
-      description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+      description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível',
       appleStore: '/',
       googleSore: '/',
-      website: '/'
+      website: '/',
+      dataRelease: '30/1/2013'
     },
     {
       id: Math.random(),
       img: dog,
       title: 'Covidx',
       instagram: '@covidx',
-      description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+      description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível',
       appleStore: '/',
       googleSore: '/',
-      website: '/'
+      website: '/',
+      dataRelease: '30/1/2013'
     },
     {
       id: Math.random(),
       img: dog,
       title: 'Covidx',
       instagram: '@covidx',
-      description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+      description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível',
       appleStore: '/',
       googleSore: '/',
-      website: '/'
+      website: '/',
+      dataRelease: '30/1/2013'
     },
     {
       id: Math.random(),
       img: dog,
       title: 'Covidx',
       instagram: '@covidx',
-      description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+      description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível',
       appleStore: '/',
       googleSore: '/',
-      website: '/'
+      website: '/',
+      dataRelease: '30/1/2013'
     },
     {
       id: Math.random(),
       img: dog,
       title: 'Covidx',
       instagram: '@covidx',
-      description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+      description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível',
       appleStore: '/',
       googleSore: '/',
-      website: '/'
+      website: '/',
+      dataRelease: '30/1/2013'
     },
     {
       id: Math.random(),
       img: dog,
       title: 'Covidx',
       instagram: '@covidx',
-      description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+      description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível',
       appleStore: '/',
       googleSore: '/',
-      website: '/'
+      website: '/',
+      dataRelease: '30/1/2013'
     },
     {
       id: Math.random(),
       img: dog,
       title: 'Covidx',
       instagram: '@covidx',
-      description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+      description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível',
       appleStore: '/',
       googleSore: '/',
-      website: '/'
+      website: '/',
+      dataRelease: '30/1/2013'
     },
     {
       id: Math.random(),
       img: dog,
       title: 'Covidx',
       instagram: '@covidx',
-      description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+      description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível',
       appleStore: '/',
       googleSore: '/',
-      website: '/'
+      website: '/',
+      dataRelease: '30/1/2013'
     },
     {
       id: Math.random(),
       img: dog,
       title: 'Covidx',
       instagram: '@covidx',
-      description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+      description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível',
       appleStore: '/',
       googleSore: '/',
-      website: '/'
+      website: '/',
+      dataRelease: '30/1/2013'
     },
     {
       id: Math.random(),
       img: dog,
       title: 'Covidx',
       instagram: '@covidx',
-      description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+      description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível',
       appleStore: '/',
       googleSore: '/',
-      website: '/'
+      website: '/',
+      dataRelease: '30/1/2013'
     },
     {
       id: Math.random(),
       img: dog,
       title: 'Covidx',
       instagram: '@covidx',
-      description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+      description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível',
       appleStore: '/',
       googleSore: '/',
-      website: '/'
+      website: '/',
+      dataRelease: '30/1/2013'
     },
     {
       id: Math.random(),
       img: dog,
       title: 'Covidx',
       instagram: '@covidx',
-      description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+      description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível',
       appleStore: '/',
       googleSore: '/',
-      website: '/'
+      website: '/',
+      dataRelease: '30/1/2013'
     },
     {
       id: Math.random(),
       img: dog,
       title: 'Covidx',
       instagram: '@covidx',
-      description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+      description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível',
       appleStore: '/',
       googleSore: '/',
-      website: '/'
+      website: '/',
+      dataRelease: '30/1/2013'
     },
     {
       id: Math.random(),
       img: dog,
       title: 'Covidx',
       instagram: '@covidx',
-      description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+      description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível',
       appleStore: '/',
       googleSore: '/',
-      website: '/'
+      website: '/',
+      dataRelease: '30/1/2013'
     },
     {
       id: Math.random(),
       img: dog,
       title: 'Covidx',
       instagram: '@covidx',
-      description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+      description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível',
       appleStore: '/',
       googleSore: '/',
-      website: '/'
+      website: '/',
+      dataRelease: '30/1/2013'
     },
     {
       id: Math.random(),
       img: dog,
       title: 'Covidx',
       instagram: '@covidx',
-      description: 'solução encontrada para combater o Covid-19 da melhor forma possível',
+      description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível',
       appleStore: '/',
       googleSore: '/',
-      website: '/'
+      website: '/',
+      dataRelease: '30/1/2013'
     },
-
+    {
+      id: Math.random(),
+      img: dog,
+      title: 'Covidx',
+      instagram: '@covidx',
+      description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível',
+      appleStore: '/',
+      googleSore: '/',
+      website: '/',
+      dataRelease: '30/1/2013'
+    },
+    {
+      id: Math.random(),
+      img: dog,
+      title: 'Covidx',
+      instagram: '@covidx',
+      description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível',
+      appleStore: '/',
+      googleSore: '/',
+      website: '/',
+      dataRelease: '30/1/2013'
+    },
+    {
+      id: Math.random(),
+      img: dog,
+      title: 'Covidx',
+      instagram: '@covidx',
+      description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível',
+      appleStore: '/',
+      googleSore: '/',
+      website: '/',
+      dataRelease: '30/1/2013'
+    },
+    {
+      id: Math.random(),
+      img: dog,
+      title: 'Covidx',
+      instagram: '@covidx',
+      description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível',
+      appleStore: '/',
+      googleSore: '/',
+      website: '/',
+      dataRelease: '30/1/2013'
+    },
+    {
+      id: Math.random(),
+      img: dog,
+      title: 'Covidx',
+      instagram: '@covidx',
+      description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível',
+      appleStore: '/',
+      googleSore: '/',
+      website: '/',
+      dataRelease: '30/1/2013'
+    },
+    {
+      id: Math.random(),
+      img: dog,
+      title: 'Covidx',
+      instagram: '@covidx',
+      description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível solução encontrada para combater o Covid-19 da melhor forma possível',
+      appleStore: '/',
+      googleSore: '/',
+      website: '/',
+      dataRelease: '30/1/2013'
+    },
+    
   ]
