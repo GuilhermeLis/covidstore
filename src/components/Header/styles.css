@@ -2,13 +2,16 @@
     padding: 30px 0px 0px 0px;
     
 }
+
 .header >.header-item-1{
     border-bottom: 2px solid;
     padding-bottom: 10px;
 }
+
 .header >.header-item-1 >.header-item-2{
     margin: auto 20px auto 20px
 }
+
 .header >.header-item-1 >.header-item-2 >div{
     display: flex;
     justify-content: space-between;

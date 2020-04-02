@@ -1,36 +1,35 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Header from '../../components/Header';
 import Popup from '../../components/Popup';
 import Card from '../../components/Card';
 
-import * as dados from '../../services/card'
+import * as dados from '../../services/card';
 import './styles.css';
 
 export default function AppsCovid() {
   const [showPopup, setShowPopup] = useState(false);
-  const [cards, setCards] = useState([])
+  const [cards, setCards] = useState([]);
 
-  useEffect(()=>{
-    setCards(dados.cards)
-  },[])
+  useEffect(() => {
+    setCards(dados.cards);
+  }, []);
 
-    const togglePopup = () => {
-        setShowPopup(!showPopup);
-    }
+  const togglePopup = () => {
+    setShowPopup(!showPopup);
+  };
 
 
-    
   return (
-    <div className = "container">
-      <Header togglePopup={togglePopup} dados = {cards}/>
-      <div className = "body">
-        <div className = "body-container">
+    <div className="container">
+      <Header togglePopup={togglePopup} dados={cards} />
+      <div className="body">
+        <div className="body-container">
 
           {
-            cards.map(card=>(
+            cards.map((card) => (
               <Card
-                key={card.id} 
+                key={card.id}
                 img={card.img}
                 title={card.title}
                 instagram={card.instagram}
@@ -42,15 +41,15 @@ export default function AppsCovid() {
               />
             ))
           }
-        {showPopup ?  
-            <Popup  
-                    text='Aplicativos para o Covid-19'  
-                    closePopup={togglePopup}  
-                /> : null  }  
+          {showPopup
+            ? (
+              <Popup
+                text="Aplicativos para o Covid-19"
+                closePopup={togglePopup}
+              />
+            ) : null }
         </div>
       </div>
     </div>
   );
 }
-
-
