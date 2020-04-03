@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
 import Header from '../../components/Header';
-import Popup from '../../components/Popup';
 import Card from '../../components/Card';
+import Categories from '../../components/Categories';
+import Footer from '../../components/Footer';
 
 import * as dados from '../../services/card';
 import './styles.css';
@@ -24,6 +25,7 @@ export default function AppsCovid() {
     <div className="container">
       <Header togglePopup={togglePopup} dados={cards} />
       <div className="body">
+        <Categories />
         <div className="body-container">
 
           {
@@ -41,15 +43,9 @@ export default function AppsCovid() {
               />
             ))
           }
-          {showPopup
-            ? (
-              <Popup
-                text="Aplicativos para o Covid-19"
-                closePopup={togglePopup}
-              />
-            ) : null }
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

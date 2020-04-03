@@ -1,42 +1,26 @@
-import React, { useCallback } from 'react';
+import React from 'react';
 import { Select } from 'react-functional-select';
-import { AiFillExclamationCircle } from 'react-icons/ai';
 
 import './styles.css';
+import logo from '../../assets/logo.png';
 
-export default function Header({ togglePopup, dados }) {
-  const getOptionValue = useCallback((option) => option.id, []);
-  const onOptionChange = useCallback(() => [], []);
-  const getOptionLabel = useCallback((option) => `${option.title}`, []);
+export default function Header() {
+  // const getOptionValue = useCallback((option) => option.id, []);
+  // const onOptionChange = useCallback(() => [], []);
+  // const getOptionLabel = useCallback((option) => `${option.title}`, []);
   return (
     <div className="header">
-      <div className="header-item-1">
-        <div className="header-item-2">
-          <div>
-            <div className="title-icon">
-              <p>
-                Aplicativo para corona virus
-              </p>
-              <button
-                className="button-icon"
-                onClick={togglePopup}
-              >
-                <AiFillExclamationCircle size="2em" color="#90ee90" />
-              </button>
-            </div>
-            <button className="button">
-              Voltar
-            </button>
-          </div>
-        </div>
+      <div className="header-dados">
+        <img src={logo} alt="" />
+        <p>
+          Google LLC is an American multinational technology
+          company that specializes in Internet-related services
+          and products, which include online advertising technologies,
+          search engine, cloud computing, software.
+        </p>
       </div>
-      <div className="search">
-        <Select
-          options={dados}
-          onOptionChange={onOptionChange}
-          getOptionLabel={getOptionLabel}
-          getOptionValue={getOptionValue}
-        />
+      <div className="select">
+        <Select />
       </div>
     </div>
   );

@@ -1,49 +1,62 @@
 .container{
     display: flex;
     flex-direction: column;
-    background-color: seashell;
     border-radius: 5px;
+    min-height: 283px;
+    color: #1F2B3F;
     
 }
 .card-container {
-    max-width: 280px;
+    background-color: seashell; 
+    margin: 10px;
+    max-width: 267px;
     height: 100%;
     display: flex;
     flex-direction: column;
-    border-radius: 5px;
+    border: 1px solid #202B3F;
+    border-radius: 8px;
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
     justify-content: space-between;
 }
 .card-container >img {
-    height: 140px;
-    border-radius: 5px 5px 0px 0px;
+    height: 80px;
+    width: 80px;
+    margin: 10px auto auto auto;
+    border-radius: 10px;
 }
 
 .card-descrition-container{
+    margin-top: 5px;
+    margin-bottom: 5px;
     display: flex;
     flex-direction: column;
+    justify-items: center;
     justify-content: space-between;
 }
 .card-descrition-container .card-title{
-    margin: 10px;
-    color: darkgreen;
+    margin: auto;
 }
 .card-descrition-container .card-instagram{
-    margin: 10px;
-    color:gray;
+    margin: auto auto auto auto;
+    opacity: 0.8;
 }
 
 .card-descrition-container .card-descrition{
-    text-align: justify;
-    color:gray;
-    margin: 0px 10px 2px 10px;
+    max-height: 92px;
+    text-align: center;
+    opacity: 0.8;
+    margin: 8px 10px 2px 10px;
 }
-
+.dropdown-buttons{
+    margin: auto;
+}
 .card-button{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 5px 7px 0px 7px;
+    margin: auto auto 15px auto;
+    font: Bold;
+    background: #547B98;
+    border-radius: 16px;
+    width: 156px;
+    min-height: 36px;
 }
 
 .card-button a{
@@ -52,6 +65,11 @@
 
 .card-button a:hover{
     opacity: 0.1;
+}
+
+.menu-dropdown{
+    display: flex;
+    flex-direction: column;
 }
 
 .img-button {
@@ -64,26 +82,3 @@
     border-radius: 2px;
 }
 
-.mask{
-    display: flex;
-    max-width: 280px;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    border-radius: 5px 5px 0px 0px;
-    color: white;
-    background-color: rgba(0, 0, 0, 1);
-}
-
-.mask .mask-title{
-    margin: 10px auto 10px auto;
-}
-
-.mask .mask-info{
-    margin: 10px auto 10px 10px;
-}
-
-.mask .mask-description {
-    margin: 10px;
-    text-align: justify;
-}

@@ -16,8 +16,25 @@
   top: 15%;  
   bottom: 15%;  
   margin: auto;  
-  background:rgba(114,238,144,0.5);  
-  border: 5px solid green;
+  background:#547B98;  
+  border: 5px solid #547B98;
+}
+
+.card-button{
+  margin: auto auto 15px auto;
+  font: Bold;
+  background: #547B98;
+  border-radius: 16px;
+  width: 156px;
+  min-height: 36px;
+}
+
+.card-button a{
+  transition: opacity 0.2s;
+}
+
+.card-button a:hover{
+  opacity: 0.1;
 }
 
 @media only screen and (max-width: 375px){

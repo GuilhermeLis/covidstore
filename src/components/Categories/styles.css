@@ -1,0 +1,37 @@
+.categories-container{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 101px auto 101px;
+    align-items: center;
+}
+@media only screen and (max-width: 1000px){
+    .categories-container{
+        flex-direction: column;
+        justify-items: center;
+    }
+}
+.categories-title{
+    height: 100%;
+}
+
+.list-container{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.categories{
+    display: flex;
+    margin: 5px 5px 0px 5px;
+    border: 1px solid #537893;
+    color: #537893;
+    border-radius: 16px;
+    text-align: center;
+    min-height: 36px;
+    min-width: 122px;
+}
+
+.categories >p{
+    margin: auto;
+}

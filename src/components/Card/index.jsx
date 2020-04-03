@@ -1,78 +1,75 @@
 import React, { useState } from 'react';
+import { FiDownload } from 'react-icons/fi';
 
-import appleButton from '../../assets/aple-button.png';
-import googleButton from '../../assets/google-button.png';
 import './styles.css';
 
 export default function Card({
-  img, title, instagram, description, dataRelease, appleLink, googleLink, webLink,
+  img, title, instagram, description, appleLink, googleLink, webLink,
 }) {
-  const [showDiv, setShowDiv] = useState(true);
-
-  const handleEnter = () => {
-    setShowDiv(false);
-  };
-  const handleLeave = () => {
-    setShowDiv(true);
+  const [showPopup, setShowPopup] = useState(false);
+  const handleShowPopup = () => {
+    setShowPopup(!showPopup);
   };
   return (
     <div
       className="container"
-      onMouseEnter={handleEnter}
-      onMouseLeave={handleLeave}
     >
-      { showDiv
-        ? (
-          <div className="card-container">
-            <img src={img} alt="" />
-            <div className="card-descrition-container">
-              <h2 className="card-title">
-                {title}
-              </h2>
-              <p className="card-instagram">
-                {instagram}
-              </p>
-              <p className="card-descrition">
-                {description}
-              </p>
-            </div>
-          </div>
-        )
-        : (
-          <div className="mask">
-            <h2 className="mask-title">
-              {title}
-            </h2>
-            <div className="mask-info">
-              <p className="mask-instagram">
-                {instagram}
-              </p>
-              <p className="mask-disponivel">
-                disponivel em
+      <div className="card-container">
+        <img src={img} alt="" />
+        <div className="card-descrition-container">
+          <h2 className="card-title">
+            {title}
+          </h2>
+          <p className="card-instagram">
+            {instagram}
+          </p>
+          <p className="card-descrition">
+            {description}
+          </p>
+        </div>
+        <div className="dropdown-buttons">
+          {
+          showPopup
+            ? (
+              <div className="menu-dropdown">
+                <a href={googleLink}>
+                  <button
+                    onClick={handleShowPopup}
+                    className="button card-button"
+                  >
+                    googleplay
+                  </button>
+                </a>
+                <a href={appleLink}>
+                  <button
+                    onClick={handleShowPopup}
+                    className="button card-button"
+                  >
+                    appleStory
+                  </button>
+                </a>
+                <a href={webLink}>
+                  <button
+                    onClick={handleShowPopup}
+                    className="button card-button"
+                  >
+                    web
+                  </button>
+                </a>
+              </div>
+            )
+            : (
+              <button
+                className="button card-button"
+                onClick={handleShowPopup}
+              >
+                <FiDownload />
                 {' '}
-                {dataRelease}
-              </p>
-            </div>
-            <div className="mask-description">
-              <p>
-                {description}
-              </p>
-            </div>
-
-          </div>
-        )}
-
-
-      <div className="card-button">
-        <a href={appleLink}>
-          <img src={appleButton} alt="" className="img-button" />
-        </a>
-        <a href={googleLink}>
-          <img src={googleButton} alt="" className="img-button" />
-        </a>
-        <a href={webLink}>
-          <div className="button-web"><div>WEBSite</div></div>
-        </a>
+                Download
+              </button>
+            )
+          }
+        </div>
       </div>
     </div>
   );

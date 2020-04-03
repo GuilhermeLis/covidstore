@@ -1,0 +1,34 @@
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.footer-container .social-midias-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-container .social-midias-container >div{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: grey;
+}
+
+.description-container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 30px;
+    color: grey;
+}
+
+.button-footer{
+    width: 175px;
+    height: 31px;
+    margin-bottom: 20px;
+    background: #BADCDD;
+    border-radius: 8px;
+    opacity: 1;
+}
