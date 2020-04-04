@@ -28,7 +28,7 @@
     min-width: 299px;
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1024px){
     .header{
         flex-direction: column;
     }
@@ -38,7 +38,7 @@
         align-items: center;
     }
     .header .header-dados >p{
-        margin: 10px 0px auto 0px;
+        margin: 20px 0px 20px 0px;
         text-align: center;
     }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Select } from 'react-functional-select';
 
+import SearchBar from '../SearchBar';
 import './styles.css';
 import logo from '../../assets/logo.png';
 
@@ -19,9 +19,8 @@ export default function Header() {
           search engine, cloud computing, software.
         </p>
       </div>
-      <div className="select">
-        <Select />
-      </div>
+      <div className="select" />
+      <SearchBar />
     </div>
   );
 }
