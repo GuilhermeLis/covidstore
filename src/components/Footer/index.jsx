@@ -7,19 +7,28 @@ export default function Footer() {
   return (
     <div className="footer-container">
       <div className="social-midias-container">
-        <div>
+        <a href="/">
           <FiInstagram size={30} />
-        </div>
-        <div>
+        </a>
+        <a href="/">
           <FiFacebook size={30} />
-        </div>
-        <div>
+        </a>
+        <a href="/">
           <FiTwitter size={30} />
-        </div>
+        </a>
       </div>
       <div className="description-container">
-        <p>Designed with ♡ by Matteus da Costa / Coded by Guilherme Lisboa</p>
-        <p>Alguns direitos reservados © 2020</p>
+        <p>
+          Designed with ♡ by Matteus da Costa / Coded by
+          <a
+            href="https://github.com/GuilhermeLis"
+            className="link-makers"
+          >
+            {' '}
+            Guilherme Lisboa
+          </a>
+        </p>
+        <p>Alguns direitos reservados &copy; 2020</p>
       </div>
       <button type="button" className="button button-footer">
         ir para versão mobile

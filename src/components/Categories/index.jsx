@@ -15,12 +15,13 @@ export default function Categories() {
       <div className="list-container">
         {
           dados.categories.map((category) => (
-            <div
+            <button
+              type="button"
               className="categories"
               key={category.key}
             >
               <p>{category.name}</p>
-            </div>
+            </button>
           ))
       }
       </div>

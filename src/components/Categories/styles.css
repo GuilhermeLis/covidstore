@@ -23,17 +23,17 @@
     }
 
     .list-container{
+        margin-top: 20px;
         margin-left: 20px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        /* grid-gap: 20px; */
     }
 }
 
 @media only screen and (max-width: 443px){
     .list-container{
+        margin-top: 20px;
         grid-template-columns: repeat(2, 1fr);
-        /* grid-gap: 20px; */
     }
 }
 
@@ -41,11 +41,22 @@
     display: flex;
     margin: 5px 5px 0px 5px;
     border: 1px solid #537893;
+    background: #F2F2FF;
     color: #537893;
     border-radius: 16px;
     text-align: center;
     min-height: 36px;
     min-width: 122px;
+    transition: opacity 0.2s;
+}
+
+.categories:hover{
+    opacity: 0.8;
+}
+
+.categories:active{
+    background: #537893;
+    color: #F2F2FF;
 }
 
 .categories >p{

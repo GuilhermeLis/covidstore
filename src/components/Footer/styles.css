@@ -10,10 +10,15 @@
     flex-direction: row;
 }
 
-.footer-container .social-midias-container >div{
+.footer-container .social-midias-container >a{
     margin-left: 10px;
     margin-right: 10px;
     color: grey;
+    transition: opacity 0.2s;
+}
+
+.footer-container .social-midias-container >a:hover{
+    opacity: 0.6;
 }
 
 .description-container{
@@ -22,6 +27,16 @@
     text-align: center;
     line-height: 30px;
     color: grey;
+}
+
+.link-makers{
+    color: grey;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.link-makers:hover{
+    opacity: 0.6;
 }
 
 .button-footer{

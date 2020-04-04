@@ -37,4 +37,8 @@
         justify-items: center;
         align-items: center;
     }
+    .header .header-dados >p{
+        margin: 10px 0px auto 0px;
+        text-align: center;
+    }
 }
