@@ -33,7 +33,10 @@ export default function AppsCovid() {
         changeDados={changeCards}
       />
       <div className="body">
-        <Categories />
+        <Categories
+          dados={cards}
+          changeDados={changeCards}
+        />
         <div className="body-container">
 
           {

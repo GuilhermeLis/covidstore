@@ -2,55 +2,22 @@
 export const categories = [
   {
     key: Math.random(),
-    name: 'saúde mental',
+    categories: 0,
+    name: 'Todos',
   },
   {
     key: Math.random(),
-    name: 'saúde mental',
+    categories: 1,
+    name: 'Psicologico',
   },
   {
     key: Math.random(),
-    name: 'saúde mental',
+    categories: 2,
+    name: 'Academia',
   },
   {
     key: Math.random(),
-    name: 'saúde mental',
+    categories: 3,
+    name: 'Culinária',
   },
-  {
-    key: Math.random(),
-    name: 'saúde mental',
-  },
-  {
-    key: Math.random(),
-    name: 'saúde mental',
-  },
-  {
-    key: Math.random(),
-    name: 'saúde mental',
-  },
-  {
-    key: Math.random(),
-    name: 'saúde mental',
-  },
-  {
-    key: Math.random(),
-    name: 'saúde mental',
-  },
-  {
-    key: Math.random(),
-    name: 'saúde mental',
-  },
-  {
-    key: Math.random(),
-    name: 'saúde mental',
-  },
-  {
-    key: Math.random(),
-    name: 'saúde mental',
-  },
-  {
-    key: Math.random(),
-    name: 'saúde mental',
-  },
-  
 ];

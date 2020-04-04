@@ -11,8 +11,9 @@ import * as dadosToSave from '../../services/card';
 export default function Header({ dados, changeDados }) {
   const savedDados = dadosToSave.cards;
   const handleInput = (e) => {
+    e.preventDefault();
     const { value } = e.target;
-    if (value === '') { changeDados(savedDados); }
+    if (value === ' ') { return changeDados(savedDados); }
     const result = dados.filter((dado) => dado.title.toLowerCase() === value.toLowerCase());
     result.length ? changeDados(result) : repair();
   };
