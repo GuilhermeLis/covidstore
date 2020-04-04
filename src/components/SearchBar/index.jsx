@@ -3,7 +3,7 @@ import { FiSearch } from 'react-icons/fi';
 
 import './styles.css';
 
-export default function SearchBar() {
+export default function SearchBar({ handleInput }) {
   return (
     <form className="text-container ">
       <span className="iconBtn">
@@ -13,6 +13,7 @@ export default function SearchBar() {
         type="text"
         className="search"
         placeholder="Pesquise aqui..."
+        onChange={handleInput}
       />
     </form>
   );

@@ -1,13 +1,26 @@
+/* eslint-disable no-use-before-define */
+/* eslint-disable no-unused-expressions */
 import React from 'react';
 
 import SearchBar from '../SearchBar';
 import './styles.css';
 import logo from '../../assets/logo.png';
+import * as dadosToSave from '../../services/card';
 
-export default function Header() {
-  // const getOptionValue = useCallback((option) => option.id, []);
-  // const onOptionChange = useCallback(() => [], []);
-  // const getOptionLabel = useCallback((option) => `${option.title}`, []);
+
+export default function Header({ dados, changeDados }) {
+  const savedDados = dadosToSave.cards;
+  const handleInput = (e) => {
+    const { value } = e.target;
+    if (value === '') { changeDados(savedDados); }
+    const result = dados.filter((dado) => dado.title.toLowerCase() === value.toLowerCase());
+    result.length ? changeDados(result) : repair();
+  };
+  const repair = () => {
+    if (savedDados.length > dados.length) {
+      changeDados(savedDados);
+    }
+  };
   return (
     <div className="header">
       <div className="header-dados">
@@ -20,7 +33,7 @@ export default function Header() {
         </p>
       </div>
       <div className="select" />
-      <SearchBar />
+      <SearchBar handleInput={handleInput} />
     </div>
   );
 }

@@ -115,7 +115,7 @@ export const cards = [
   {
     id: Math.random(),
     img: dog,
-    title: 'Covidx',
+    title: 'teste1',
     instagram: '@covidx',
     description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução ',
     appleStore: '/',

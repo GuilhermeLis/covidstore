@@ -16,6 +16,10 @@ export default function AppsCovid() {
     setCards(dados.cards);
   }, []);
 
+  const changeCards = (value) => {
+    setCards(value);
+  };
+
   const togglePopup = () => {
     setShowPopup(!showPopup);
   };
@@ -23,7 +27,11 @@ export default function AppsCovid() {
 
   return (
     <div className="container">
-      <Header togglePopup={togglePopup} dados={cards} />
+      <Header
+        togglePopup={togglePopup}
+        dados={cards}
+        changeDados={changeCards}
+      />
       <div className="body">
         <Categories />
         <div className="body-container">
