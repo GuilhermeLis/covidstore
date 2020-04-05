@@ -1,6 +1,7 @@
+/* eslint-disable no-unused-expressions */
 /* eslint-disable consistent-return */
 /* eslint-disable no-use-before-define */
-import React, { useState } from 'react';
+import React from 'react';
 
 import Button from '../Button';
 
@@ -8,8 +9,9 @@ import * as dadosToSave from '../../services/card';
 import * as dadosCategories from '../../services/categories';
 import './styles.css';
 
-export default function Categories({ dados, changeDados }) {
-  const [theLast, setTheLast] = useState(0);
+export default function Categories({
+  dados, changeDados, theLast, setTheLast,
+}) {
   const savedDados = dadosToSave.cards;
   const handleSearch = (value) => {
     if (value === theLast) { return repair(); }

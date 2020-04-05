@@ -12,6 +12,7 @@ import './styles.css';
 export default function AppsCovid() {
   const [showDontFind, setShowDontFind] = useState(false);
   const [cards, setCards] = useState([]);
+  const [theLast, setTheLast] = useState(0);
 
   useEffect(() => {
     setCards(dados.cards);
@@ -37,11 +38,14 @@ export default function AppsCovid() {
         didntFind={DidntFind}
         finded={finded}
         changeDados={changeCards}
+        setTheLast={setTheLast}
       />
       <div className="body">
         <Categories
           dados={cards}
           changeDados={changeCards}
+          theLast={theLast}
+          setTheLast={setTheLast}
         />
         <div className="body-container">
 

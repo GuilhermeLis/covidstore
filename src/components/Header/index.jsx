@@ -1,3 +1,4 @@
+/* eslint-disable no-nested-ternary */
 /* eslint-disable consistent-return */
 /* eslint-disable no-use-before-define */
 /* eslint-disable no-unused-expressions */
@@ -10,10 +11,11 @@ import * as dadosToSave from '../../services/card';
 
 
 export default function Header({
-  dados, changeDados, didntFind, finded,
+  dados, changeDados, didntFind, finded, setTheLast,
 }) {
   const savedDados = dadosToSave.cards;
   const handleInput = (e) => {
+    setTheLast(0);
     e.preventDefault();
     const { value } = e.target;
     if (value === '') { return repair(); }
