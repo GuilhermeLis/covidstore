@@ -37,12 +37,17 @@
 
 .dontFind{
     display: flex;
-    margin: auto;
+    margin-bottom: 50px;
 }
 
 .dontFind >div{
-    background: red;
+    color: #808080;
     margin: auto;
     display: flex;
     flex-direction: row;
+}
+
+.dontFind >div >h1 {
+    text-align: center;
+    margin-left: 10px;
 }

@@ -10,7 +10,7 @@ import * as dados from '../../services/card';
 import './styles.css';
 
 export default function AppsCovid() {
-  const [showDontFind, setShowDontFind] = useState(true);
+  const [showDontFind, setShowDontFind] = useState(false);
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
@@ -45,7 +45,7 @@ export default function AppsCovid() {
         />
         <div className="body-container">
 
-          {/* {
+          {
             cards.map((card) => (
               <Card
                 key={card.id}
@@ -59,13 +59,13 @@ export default function AppsCovid() {
                 dataRelease={card.dataRelease}
               />
             ))
-          } */}
+          }
         </div>
         {
             showDontFind ? (
               <div className="dontFind">
                 <div>
-                  <FaExclamation size={50} />
+                  <FaExclamation size={50} color="#808080" />
                   <h1>
                     Resultado Não encontrado
                   </h1>
