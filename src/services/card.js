@@ -23,7 +23,7 @@ export const cards = [
     description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução ',
     appleStore: '/',
     googleStore: '/',
-    website: '/',
+    website: null,
     dataRelease: '30/1/2013',
   },
   {
@@ -35,7 +35,7 @@ export const cards = [
     description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução ',
     appleStore: '/',
     googleStore: '/',
-    website: '/',
+    website: null,
     dataRelease: '30/1/2013',
   },
   {
@@ -47,7 +47,7 @@ export const cards = [
     description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução ',
     appleStore: '/',
     googleStore: '/',
-    website: '/',
+    website: null,
     dataRelease: '30/1/2013',
   },
   {
@@ -59,7 +59,7 @@ export const cards = [
     description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução ',
     appleStore: '/',
     googleStore: '/',
-    website: '/',
+    website: null,
     dataRelease: '30/1/2013',
   },
   {
@@ -71,7 +71,7 @@ export const cards = [
     description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução ',
     appleStore: '/',
     googleStore: '/',
-    website: '/',
+    website: null,
     dataRelease: '30/1/2013',
   },
   {
@@ -83,7 +83,7 @@ export const cards = [
     description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução ',
     appleStore: '/',
     googleStore: '/',
-    website: '/',
+    website: null,
     dataRelease: '30/1/2013',
   },
   {
@@ -95,7 +95,7 @@ export const cards = [
     description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução ',
     appleStore: '/',
     googleStore: '/',
-    website: '/',
+    website: null,
     dataRelease: '30/1/2013',
   },
   {
@@ -107,7 +107,7 @@ export const cards = [
     description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução ',
     appleStore: '/',
     googleStore: '/',
-    website: '/',
+    website: null,
     dataRelease: '30/1/2013',
   },
   {
@@ -119,7 +119,7 @@ export const cards = [
     description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução ',
     appleStore: '/',
     googleStore: '/',
-    website: '/',
+    website: null,
     dataRelease: '30/1/2013',
   },
   {
@@ -131,7 +131,7 @@ export const cards = [
     description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução ',
     appleStore: '/',
     googleStore: '/',
-    website: '/',
+    website: null,
     dataRelease: '30/1/2013',
   },
   {
@@ -143,7 +143,7 @@ export const cards = [
     description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução ',
     appleStore: '/',
     googleStore: '/',
-    website: '/',
+    website: null,
     dataRelease: '30/1/2013',
   },
   {
@@ -155,7 +155,7 @@ export const cards = [
     description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução ',
     appleStore: '/',
     googleStore: '/',
-    website: '/',
+    website: null,
     dataRelease: '30/1/2013',
   },
   {
@@ -167,7 +167,7 @@ export const cards = [
     description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução ',
     appleStore: '/',
     googleStore: '/',
-    website: '/',
+    website: null,
     dataRelease: '30/1/2013',
   },
   {
@@ -179,7 +179,7 @@ export const cards = [
     description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução ',
     appleStore: '/',
     googleStore: '/',
-    website: '/',
+    website: null,
     dataRelease: '30/1/2013',
   },
   {
@@ -191,7 +191,7 @@ export const cards = [
     description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução ',
     appleStore: '/',
     googleStore: '/',
-    website: '/',
+    website: null,
     dataRelease: '30/1/2013',
   },
   {
@@ -203,7 +203,7 @@ export const cards = [
     description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução ',
     appleStore: '/',
     googleStore: '/',
-    website: '/',
+    website: null,
     dataRelease: '30/1/2013',
   },
   {
@@ -215,7 +215,7 @@ export const cards = [
     description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução ',
     appleStore: '/',
     googleStore: '/',
-    website: '/',
+    website: null,
     dataRelease: '30/1/2013',
   },
   {
@@ -227,7 +227,7 @@ export const cards = [
     description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução ',
     appleStore: '/',
     googleStore: '/',
-    website: '/',
+    website: null,
     dataRelease: '30/1/2013',
   },
   {
@@ -239,7 +239,7 @@ export const cards = [
     description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução ',
     appleStore: '/',
     googleStore: '/',
-    website: '/',
+    website: null,
     dataRelease: '30/1/2013',
   },
   {
@@ -251,7 +251,7 @@ export const cards = [
     description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução ',
     appleStore: '/',
     googleStore: '/',
-    website: '/',
+    website: null,
     dataRelease: '30/1/2013',
   },
   {
@@ -263,7 +263,7 @@ export const cards = [
     description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução ',
     appleStore: '/',
     googleStore: '/',
-    website: '/',
+    website: null,
     dataRelease: '30/1/2013',
   },
   {
@@ -275,7 +275,7 @@ export const cards = [
     description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução ',
     appleStore: '/',
     googleStore: '/',
-    website: '/',
+    website: null,
     dataRelease: '30/1/2013',
   },
   {
@@ -287,7 +287,7 @@ export const cards = [
     description: 'solução encontrada para combater o Covid-19 da melhor forma possível solução ',
     appleStore: '/',
     googleStore: '/',
-    website: '/',
+    website: null,
     dataRelease: '30/1/2013',
   },
 ];

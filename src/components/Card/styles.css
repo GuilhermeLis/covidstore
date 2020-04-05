@@ -74,6 +74,11 @@
     transition: min-height 0.7s;
 }
 
+.weblink{
+    text-decoration: none;
+    color: #fff;
+}
+
 .card-button-new{
     position: absolute;
     z-index: 1;

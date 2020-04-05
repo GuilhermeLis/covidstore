@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FiDownload } from 'react-icons/fi';
+import { FiDownload, FiArrowRight } from 'react-icons/fi';
 import { FaApple, FaGooglePlay } from 'react-icons/fa';
 
 
@@ -43,13 +43,27 @@ export default function Card({
           onMouseEnter={handleShowLinks}
           onMouseLeave={handleHideLinks}
         >
-          <div className={`card-button ${newButton}`}>
-            <div className={`svg ${newP}`}>
-              <FiDownload size={20} />
-              {' '}
-              Download
-            </div>
-            {
+          {
+            webLink ? (
+              <div className="card-button">
+                <a href={webLink} className="weblink">
+                  <div className="svg">
+                    <FiArrowRight />
+                    {' '}
+                    WebSite
+                  </div>
+                </a>
+              </div>
+            )
+
+              : (
+                <div className={`card-button ${newButton}`}>
+                  <div className={`svg ${newP}`}>
+                    <FiDownload size={20} />
+                    {' '}
+                    Download
+                  </div>
+                  {
               showLinks ? (
                 <>
                   <div className="card-button-a">
@@ -69,7 +83,9 @@ export default function Card({
                 </>
               ) : null
             }
-          </div>
+                </div>
+              )
+          }
         </div>
       </div>
     </div>
