@@ -21,7 +21,6 @@ export default function Categories({ dados, changeDados }) {
     if (savedDados.length > dados.length) {
       changeDados(savedDados);
       setTheLast(0);
-      return true;
     }
   };
   return (
@@ -38,6 +37,8 @@ export default function Categories({ dados, changeDados }) {
               click={() => handleSearch(category.categories)}
               name={category.name}
               key={category.key}
+              search={theLast}
+              id={category.categories}
             />
           ))
       }

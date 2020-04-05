@@ -1,19 +1,19 @@
 /* eslint-disable no-unused-expressions */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import './styles.css';
 
-export default function Button({ click, name }) {
+export default function Button({
+  click, name, search, id,
+}) {
   const [holdPress, setHoldPress] = useState('');
-  const handleClick = () => {
-    (holdPress === '') ? setHoldPress('categories-active') : setHoldPress('');
-    const disable = click();
-    disable ? setHoldPress('') : null;
-    console.log(disable);
-  };
+
+  useEffect(() => {
+    (id === search) ? setHoldPress('categories-active') : setHoldPress('');
+  }, [search]);
   return (
     <button
-      onClick={handleClick}
+      onClick={click}
       type="button"
       className={`categories ${holdPress}`}
     >
