@@ -2,11 +2,6 @@
 export const categories = [
   {
     key: Math.random(),
-    categories: 0,
-    name: 'Todos',
-  },
-  {
-    key: Math.random(),
     categories: 1,
     name: 'Psicologico',
   },

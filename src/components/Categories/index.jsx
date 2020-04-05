@@ -1,22 +1,27 @@
 /* eslint-disable consistent-return */
 /* eslint-disable no-use-before-define */
-/* eslint-disable no-unused-expressions */
-import React from 'react';
+import React, { useState } from 'react';
+
+import Button from '../Button';
 
 import * as dadosToSave from '../../services/card';
 import * as dadosCategories from '../../services/categories';
 import './styles.css';
 
 export default function Categories({ dados, changeDados }) {
+  const [theLast, setTheLast] = useState(0);
   const savedDados = dadosToSave.cards;
   const handleSearch = (value) => {
-    if (value === 0) { return repair(); }
+    if (value === theLast) { return repair(); }
+    setTheLast(value);
     const result = savedDados.filter((dado) => dado.categories === value);
     changeDados(result);
   };
   const repair = () => {
     if (savedDados.length > dados.length) {
       changeDados(savedDados);
+      setTheLast(0);
+      return true;
     }
   };
   return (
@@ -29,14 +34,11 @@ export default function Categories({ dados, changeDados }) {
       <div className="list-container">
         {
           dadosCategories.categories.map((category) => (
-            <button
-              onClick={() => handleSearch(category.categories)}
-              type="button"
-              className="categories"
+            <Button
+              click={() => handleSearch(category.categories)}
+              name={category.name}
               key={category.key}
-            >
-              <p>{category.name}</p>
-            </button>
+            />
           ))
       }
       </div>

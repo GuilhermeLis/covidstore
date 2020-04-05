@@ -1,0 +1,21 @@
+.categories{
+    display: flex;
+    margin: 5px 5px 0px 5px;
+    border: 1px solid #537893;
+    background: #F2F2FF;
+    color: #537893;
+    border-radius: 16px;
+    text-align: center;
+    min-height: 36px;
+    min-width: 122px;
+    transition: opacity 0.2s;
+}
+
+.categories:hover{
+    opacity: 0.8;
+}
+
+.categories-active{
+    background: #537893;
+    color: #F2F2FF;
+}

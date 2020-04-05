@@ -19,7 +19,16 @@ export default function Footer() {
       </div>
       <div className="description-container">
         <p>
-          Designed with ♡ by Matteus da Costa / Coded by
+          Designed with ♡ by
+          <a
+            href="be.net/matteusdacosta"
+            className="link-makers"
+          >
+            {' '}
+            Matteus da Costa
+            {' '}
+          </a>
+          / Coded by
           <a
             href="https://github.com/GuilhermeLis"
             className="link-makers"
