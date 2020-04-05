@@ -1,14 +1,25 @@
 import React, { useState } from 'react';
 import { FiDownload } from 'react-icons/fi';
+import { FaApple, FaGooglePlay } from 'react-icons/fa';
+
 
 import './styles.css';
 
 export default function Card({
   img, title, instagram, description, appleLink, googleLink, webLink,
 }) {
-  const [showPopup, setShowPopup] = useState(false);
-  const handleShowPopup = () => {
-    setShowPopup(!showPopup);
+  const [showLinks, setShowLinks] = useState(false);
+  const [newP, setNewP] = useState('');
+  const [newButton, setNewButton] = useState('');
+  const handleShowLinks = () => {
+    setShowLinks(true);
+    setNewP('card-button-p');
+    setNewButton('card-button-new');
+  };
+  const handleHideLinks = () => {
+    setShowLinks(false);
+    setNewP('');
+    setNewButton('');
   };
   return (
     <div
@@ -27,48 +38,38 @@ export default function Card({
             {description}
           </p>
         </div>
-        <div className="dropdown-buttons">
-          {
-          showPopup
-            ? (
-              <div className="menu-dropdown">
-                <a href={googleLink}>
-                  <button
-                    onClick={handleShowPopup}
-                    className="button card-button"
-                  >
-                    googleplay
-                  </button>
-                </a>
-                <a href={appleLink}>
-                  <button
-                    onClick={handleShowPopup}
-                    className="button card-button"
-                  >
-                    appleStory
-                  </button>
-                </a>
-                <a href={webLink}>
-                  <button
-                    onClick={handleShowPopup}
-                    className="button card-button"
-                  >
-                    web
-                  </button>
-                </a>
-              </div>
-            )
-            : (
-              <button
-                className="button card-button"
-                onClick={handleShowPopup}
-              >
-                <FiDownload />
-                {' '}
-                Download
-              </button>
-            )
-          }
+        <div
+          className="dropdown-buttons"
+          onMouseEnter={handleShowLinks}
+          onMouseLeave={handleHideLinks}
+        >
+          <div className={`card-button ${newButton}`}>
+            <div className={`svg ${newP}`}>
+              <FiDownload size={20} />
+              {' '}
+              Download
+            </div>
+            {
+              showLinks ? (
+                <>
+                  <div className="card-button-a">
+                    <a href={appleLink}>
+                      <FaApple size={25} />
+                      {' '}
+                      Apple
+                    </a>
+                  </div>
+                  <div className="card-button-a">
+                    <a href={googleLink}>
+                      <FaGooglePlay size={25} />
+                      {' '}
+                      Android
+                    </a>
+                  </div>
+                </>
+              ) : null
+            }
+          </div>
         </div>
       </div>
     </div>
