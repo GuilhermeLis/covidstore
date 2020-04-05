@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { FaExclamation } from 'react-icons/fa';
 
 import Header from '../../components/Header';
 import Card from '../../components/Card';
@@ -9,7 +10,7 @@ import * as dados from '../../services/card';
 import './styles.css';
 
 export default function AppsCovid() {
-  const [showPopup, setShowPopup] = useState(false);
+  const [showDontFind, setShowDontFind] = useState(true);
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
@@ -20,16 +21,21 @@ export default function AppsCovid() {
     setCards(value);
   };
 
-  const togglePopup = () => {
-    setShowPopup(!showPopup);
+  const finded = () => {
+    setShowDontFind(false);
+  };
+
+  const DidntFind = () => {
+    setShowDontFind(true);
   };
 
 
   return (
     <div className="container">
       <Header
-        togglePopup={togglePopup}
         dados={cards}
+        didntFind={DidntFind}
+        finded={finded}
         changeDados={changeCards}
       />
       <div className="body">
@@ -39,7 +45,7 @@ export default function AppsCovid() {
         />
         <div className="body-container">
 
-          {
+          {/* {
             cards.map((card) => (
               <Card
                 key={card.id}
@@ -53,8 +59,21 @@ export default function AppsCovid() {
                 dataRelease={card.dataRelease}
               />
             ))
-          }
+          } */}
         </div>
+        {
+            showDontFind ? (
+              <div className="dontFind">
+                <div>
+                  <FaExclamation size={50} />
+                  <h1>
+                    Resultado Não encontrado
+                  </h1>
+                </div>
+              </div>
+            )
+              : null
+          }
       </div>
       <Footer />
     </div>

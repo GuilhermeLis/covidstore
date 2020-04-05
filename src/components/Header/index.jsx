@@ -1,3 +1,4 @@
+/* eslint-disable consistent-return */
 /* eslint-disable no-use-before-define */
 /* eslint-disable no-unused-expressions */
 import React from 'react';
@@ -8,18 +9,25 @@ import logo from '../../assets/logo.png';
 import * as dadosToSave from '../../services/card';
 
 
-export default function Header({ dados, changeDados }) {
+export default function Header({
+  dados, changeDados, didntFind, finded,
+}) {
   const savedDados = dadosToSave.cards;
   const handleInput = (e) => {
     e.preventDefault();
     const { value } = e.target;
-    if (value === ' ') { return changeDados(savedDados); }
-    const result = dados.filter((dado) => dado.title.toLowerCase() === value.toLowerCase());
-    result.length ? changeDados(result) : repair();
+    if (value === '') { return repair(); }
+    const result = savedDados.filter((dado) => dado.title.toLowerCase() === value.toLowerCase());
+    result.length ? showResult(result) : changeDados(result); didntFind();
+  };
+  const showResult = (result) => {
+    changeDados(result);
+    finded();
   };
   const repair = () => {
     if (savedDados.length > dados.length) {
       changeDados(savedDados);
+      finded();
     }
   };
   return (
