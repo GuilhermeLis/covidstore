@@ -10,7 +10,7 @@ export default function Button({
 
   useEffect(() => {
     (id === search) ? setHoldPress('categories-active') : setHoldPress('');
-  }, [search]);
+  }, [search,id]);
   return (
     <button
       onClick={click}
