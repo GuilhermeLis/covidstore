@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 env:
-  BUCKET: psicovid 
+  BUCKET: covidstore.psicovid19br.org 
 
 jobs:
   build:
