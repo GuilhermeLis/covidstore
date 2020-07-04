@@ -41,8 +41,8 @@ jobs:
     - name: ALL users can read
       run: gsutil -m acl ch -R -u AllUsers:R gs://"$BUCKET"
       
-    - name: Cache Control
-      run: gsutil -m setmeta -h "Cache-Control:public, max-age=15768000" gs://"BUCKET"/**/*.{png,svg,css,js}
+#     - name: Cache Control
+#       run: gsutil -m setmeta -h "Cache-Control:public, max-age=15768000" gs://"BUCKET"/**/*.{png,svg,css,js}
       
-    - name: Cache Control index
-      run: gsutil setmeta -h "Cache-Control:no-cache, no-store" gs://"BUCKET"/index.html
+#     - name: Cache Control index
+#       run: gsutil setmeta -h "Cache-Control:no-cache, no-store" gs://"BUCKET"/index.html
