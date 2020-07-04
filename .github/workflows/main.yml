@@ -1,0 +1,48 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+
+env:
+  BUCKET: psicovid 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+      
+    - name: Install dependencias
+      run: yarn install
+      
+    - name: Build
+      run: yarn build
+      
+    - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
+      with:
+        version: '290.0.1'
+        project_id: ${{ secrets.GCP_PROJECT }}
+        service_account_key: ${{ secrets.GCP_SA_KEY }}
+        export_default_credentials: true
+    - run: gcloud info
+      
+    - name: Upload fiels to bucket
+      run: gsutil -m rsync -R ./build gs://"$BUCKET"
+      
+    - name: ALL users can read
+      run: gsutil -m acl ch -R -u AllUsers:R gs://"$BUCKET"
+      
+    - name: Cache Control
+      run: gsutil -m setmeta -h "Cache-Control:public, max-age=15768000" gs://"BUCKET"/**/*.{png,svg,css,js}
+      
+    - name: Cache Control index
+      run: gsutil setmeta -h "Cache-Control:no-cache, no-store" gs://"BUCKET"/index.html
